@@ -92,7 +92,7 @@ const ProjectCard = ({ link, title, children, bg }) => {
             boxShadow: `xl`,
           },
         }}
-        onClick={handleOpen}
+        // onClick={handleOpen}
       >
         <div
           sx={{
@@ -115,7 +115,8 @@ const ProjectCard = ({ link, title, children, bg }) => {
           {title}
         </div>
       </div>
-      <Modal
+      {/* Modal for future project details */}
+      {/* <Modal
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"
         sx={{
@@ -136,17 +137,13 @@ const ProjectCard = ({ link, title, children, bg }) => {
           <div
             sx={{
               backgroundColor: `white`,
-              border: `5px solid #000`,
+              border: `5px solid ${bg || "none"}`,
               boxShadow: `15px`,
               padding: `20px`,
               color: `black`,
               maxWidth: `500px`,
             }}
           >
-            {/* <h2 id="spring-modal-title">Spring modal</h2>
-            <p id="spring-modal-description">react-spring animates me.</p> */}
-            {/* <p>{children}</p> */}
-            {/* Put grid here and some images */}
             <Grid
               container
               alignContent="center"
@@ -168,7 +165,7 @@ const ProjectCard = ({ link, title, children, bg }) => {
             </Grid>
           </div>
         </Fade>
-      </Modal>
+      </Modal> */}
     </>
   );
 };
