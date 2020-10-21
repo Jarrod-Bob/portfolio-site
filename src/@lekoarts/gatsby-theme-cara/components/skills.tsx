@@ -88,7 +88,7 @@ const Skills = ({ offset, factor = 2 }: { offset: number; factor?: number }) => 
                 alignItem: `center`
             }}>
             <Masonry
-            breakpointCols={{default: 4, 900: 2, 1200: 3}}
+            breakpointCols={{default: 5, 900: 2, 1200: 3, 1550: 4}}
             className={skillsStyle.skillsGrid}
             columnClassName={skillsStyle.skillsGrid_column}
             >

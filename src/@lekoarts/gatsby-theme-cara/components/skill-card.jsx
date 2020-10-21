@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import { jsx, Link as TLink, Heading } from "theme-ui";
-import { Link } from "gatsby";
-import { ChildImageSharpFluid } from "../types";
+import { jsx, Heading } from "theme-ui";
 import { Card } from "@material-ui/core";
 
 const px = [`64px`, `32px`, `16px`, `8px`, `4px`];

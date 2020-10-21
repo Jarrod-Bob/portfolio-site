@@ -6,13 +6,13 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import AboutMDX from "../sections/about"
+import ExperiencesMDX from "../sections/experiences"
 import { Grid } from "@material-ui/core"
 
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Experiences = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="divider"
+      bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
       speed={0.2}
       offset={offset}
@@ -39,37 +39,10 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        
-        <div sx={{
-          display: "flex",
-          alignItems: `center`
-        }}>
-          {/* <div sx={{
-            width: `100%`,
-            height: `500px`,
-            backgroundImage: "url('myself.jpg')",
-            backgroundSize: `cover`,
-          }}>
-
-          </div> */}
-          <Grid container spacing={2} justify="center" alignItems="center">
-            <Grid item sm={12} md={6} sx={{display:"flex", justifyContent:`center`}}>
-              <img src="/myself.jpg" alt="Self Portrait" sx={{width:`100%`, maxWidth:`600px`, height:`auto`, objectFit: `cover`}}/>
-            </Grid>
-            <Grid item sm={12} md={6}>
-              <AboutMDX />
-            </Grid>
-          </Grid>
-          {/* <div sx={{
-            marginLeft: `40px`
-          }}>
-            
-          </div> */}
-        </div>
-         
+        <ExperiencesMDX />
       </Inner>
     </Content>
   </div>
 )
 
-export default About
+export default Experiences

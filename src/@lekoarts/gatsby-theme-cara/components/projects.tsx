@@ -28,7 +28,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
           }}
         >
           <ProjectsMDX />
-        </div>
+      </div>
       </Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>

@@ -12,6 +12,7 @@ import {
   config,
   animated,
 } from "react-spring";
+import { Grid } from "@material-ui/core";
 
 const Fade = React.forwardRef(function Fade(props, ref) {
   const { in: open, children, onEnter, onExited, ...other } = props;
@@ -92,15 +93,7 @@ const ProjectCard = ({ link, title, children, bg }) => {
           },
         }}
         onClick={handleOpen}
-        //   onClick={() => set(!open)}
       >
-        {/* {transitions.map(({ item, key, props }) =>
-        item ? (
-          <animated.div>ello</animated.div>
-        ) : (
-          <animated.div>hello</animated.div>
-        )
-      )} */}
         <div
           sx={{
             opacity: 0.85,
@@ -129,6 +122,7 @@ const ProjectCard = ({ link, title, children, bg }) => {
           display: `flex`,
           alignItems: `center`,
           justifyContent: `center`,
+          overflowY: `auto`,
         }}
         open={open}
         onClose={handleClose}
@@ -142,14 +136,36 @@ const ProjectCard = ({ link, title, children, bg }) => {
           <div
             sx={{
               backgroundColor: `white`,
-              border: `2px solid #000`,
+              border: `5px solid #000`,
               boxShadow: `15px`,
               padding: `20px`,
               color: `black`,
+              maxWidth: `500px`,
             }}
           >
-            <h2 id="spring-modal-title">Spring modal</h2>
-            <p id="spring-modal-description">react-spring animates me.</p>
+            {/* <h2 id="spring-modal-title">Spring modal</h2>
+            <p id="spring-modal-description">react-spring animates me.</p> */}
+            {/* <p>{children}</p> */}
+            {/* Put grid here and some images */}
+            <Grid
+              container
+              alignContent="center"
+              alignItems="center"
+              spacing={2}
+            >
+              <Grid item justify="center" xs={12} md={6}>
+                hello
+              </Grid>
+              <Grid item xs={12} md={6}>
+                hello
+              </Grid>
+              <Grid item xs={12} md={6}>
+                hello
+              </Grid>
+              <Grid item xs={12} md={6}>
+                hello
+              </Grid>
+            </Grid>
           </div>
         </Fade>
       </Modal>

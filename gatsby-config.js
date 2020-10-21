@@ -59,5 +59,8 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    
   ].filter(Boolean),
 }
