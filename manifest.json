@@ -1,4 +1,6 @@
 {
   "main.js": "render-page.js",
-  "main.js.map": "render-page.js.map"
+  "main.js.map": "render-page.js.map",
+  "static/Jarrod_Ng_CV.pdf": "static/Jarrod_Ng_CV-cd15a3c8d8a89d2cf333da6e1a86d6c0.pdf",
+  "static/myself.jpg": "static/myself-2f56b9fb100dd8d099df5f1c4ae54d57.jpg"
 }
