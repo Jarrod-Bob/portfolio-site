@@ -1,0 +1,40 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.b2be9dce3ed14b84332a.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-c4fa86dfd4ad05097eee.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-lekoarts-gatsby-theme-cara-templates-cara-tsx-61265aca4cbe242c3c25.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-gatsby-plugin-offline-app-shell-js-23a7fd7af64eca5676b2.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-ebfe50badabc2987711d.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-c90682c3d94fb45fdc20.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-7bab5845338d2906aec1.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/portfolio-site/
+  Link: </portfolio-site/webpack-runtime-ebfe50badabc2987711d.js>; rel=preload; as=script
+  Link: </portfolio-site/framework-c90682c3d94fb45fdc20.js>; rel=preload; as=script
+  Link: </portfolio-site/app-7bab5845338d2906aec1.js>; rel=preload; as=script
+  Link: </portfolio-site/styles-c4fa86dfd4ad05097eee.js>; rel=preload; as=script
+  Link: </portfolio-site/component---src-lekoarts-gatsby-theme-cara-templates-cara-tsx-61265aca4cbe242c3c25.js>; rel=preload; as=script
+  Link: </portfolio-site/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </portfolio-site/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/portfolio-site/offline-plugin-app-shell-fallback/
+  Link: </portfolio-site/webpack-runtime-ebfe50badabc2987711d.js>; rel=preload; as=script
+  Link: </portfolio-site/framework-c90682c3d94fb45fdc20.js>; rel=preload; as=script
+  Link: </portfolio-site/app-7bab5845338d2906aec1.js>; rel=preload; as=script
+  Link: </portfolio-site/component---node-modules-gatsby-plugin-offline-app-shell-js-23a7fd7af64eca5676b2.js>; rel=preload; as=script
+  Link: </portfolio-site/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </portfolio-site/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
