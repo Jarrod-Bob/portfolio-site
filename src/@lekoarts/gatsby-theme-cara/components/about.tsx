@@ -9,6 +9,9 @@ import { UpDown, UpDownWide } from "../styles/animations"
 import AboutMDX from "../sections/about"
 import { Button, Grid, makeStyles } from "@material-ui/core"
 
+import CV from "../../../../static/Jarrod_Ng_CV.pdf"
+import SelfPortrait from "../../../../static/myself.jpg"
+
 
 const useStyles = makeStyles(() => ({
   button: {
@@ -62,11 +65,11 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
         }}>
           <Grid container spacing={2} justify="center" alignItems="center">
             <Grid item sm={12} md={6} sx={{display:"flex", justifyContent:`center`}}>
-              <img src="/myself.jpg" alt="Self Portrait" sx={{width:`100%`, maxWidth:`600px`, height:`auto`, objectFit: `cover`}}/>
+              <img src={SelfPortrait} alt="Self Portrait" sx={{width:`100%`, maxWidth:`600px`, height:`auto`, objectFit: `cover`}}/>
             </Grid>
             <Grid item sm={12} md={6}>
               <AboutMDX />
-              <a href="/Jarrod_Ng_CV.pdf" download>
+              <a href={CV} download="Jarrod_Ng_CV.pdf">
                 <Button className={classes.button} variant="contained" color="" size="large">Download Resume</Button>
               </a>
             </Grid>
