@@ -6,7 +6,6 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import SkillsMDX from "../sections/skills"
 import SkillCard from "./skill-card"
 import Masonry from 'react-masonry-css'
 import skillsStyle from './skills.module.css'
@@ -88,7 +87,7 @@ const Skills = ({ offset, factor = 2 }: { offset: number; factor?: number }) => 
                 alignItem: `center`
             }}>
             <Masonry
-            breakpointCols={{default: 5, 900: 2, 1200: 3, 1550: 4}}
+            breakpointCols={{default: 5, 450:2, 900: 3, 1200: 4, 1550: 5}}
             className={skillsStyle.skillsGrid}
             columnClassName={skillsStyle.skillsGrid_column}
             >

@@ -7,9 +7,26 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import AboutMDX from "../sections/about"
-import { Grid } from "@material-ui/core"
+import { Button, Grid, makeStyles } from "@material-ui/core"
 
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+
+const useStyles = makeStyles(() => ({
+  button: {
+    padding: "25px",
+    fontSize: "22px",
+    fontWeight: "600",
+    background: "#ed8936",
+    color: "white",
+    '&:hover': {
+      backgroundColor:"#d17324"
+    }
+  }
+}))
+
+const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
+  const classes = useStyles()
+
+  return (
   <div>
     <Divider
       bg="divider"
@@ -39,37 +56,25 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        
         <div sx={{
           display: "flex",
           alignItems: `center`
         }}>
-          {/* <div sx={{
-            width: `100%`,
-            height: `500px`,
-            backgroundImage: "url('myself.jpg')",
-            backgroundSize: `cover`,
-          }}>
-
-          </div> */}
           <Grid container spacing={2} justify="center" alignItems="center">
             <Grid item sm={12} md={6} sx={{display:"flex", justifyContent:`center`}}>
               <img src="/myself.jpg" alt="Self Portrait" sx={{width:`100%`, maxWidth:`600px`, height:`auto`, objectFit: `cover`}}/>
             </Grid>
             <Grid item sm={12} md={6}>
               <AboutMDX />
+              <a href="/Jarrod_Ng_CV.pdf" download>
+                <Button className={classes.button} variant="contained" color="" size="large">Download Resume</Button>
+              </a>
             </Grid>
           </Grid>
-          {/* <div sx={{
-            marginLeft: `40px`
-          }}>
-            
-          </div> */}
-        </div>
-         
+        </div>       
       </Inner>
     </Content>
   </div>
-)
+)}
 
 export default About

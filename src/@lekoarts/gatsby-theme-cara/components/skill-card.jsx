@@ -38,10 +38,10 @@ const SkillCard = ({
         },
         position: `relative`,
         fontSize: `2rem`,
-        minWidth: `250px`,
-        minHeight: `250px`,
+        minWidth: `180px`,
+        minHeight: `180px`,
         textAlign: `center`,
-        margin: `20px 0px`,
+        margin: `30px 0px`,
         padding: `10px`,
         backgroundColor: `${
           "hsl(" +
@@ -84,7 +84,7 @@ const SkillCard = ({
         data-name="card-overlay"
       >
         <Heading
-          variant="styles.h4"
+          variant="styles.h5"
           sx={{
             my: 0,
             textShadow: `rgba(0, 0, 0, 0.2) 0px 2px 12px`,
