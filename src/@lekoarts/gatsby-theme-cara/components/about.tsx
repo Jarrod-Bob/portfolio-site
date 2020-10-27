@@ -63,7 +63,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
           display: "flex",
           alignItems: `center`
         }}>
-          <Grid container spacing={2} justify="center" alignItems="center">
+          <Grid container spacing={4} justify="center" alignItems="center">
             <Grid item sm={12} md={6} sx={{display:"flex", justifyContent:`center`}}>
               <img src={SelfPortrait} alt="Self Portrait" sx={{width:`100%`, maxWidth:`600px`, height:`auto`, objectFit: `cover`}}/>
             </Grid>
